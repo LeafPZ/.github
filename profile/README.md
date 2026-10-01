@@ -54,13 +54,19 @@ I (aoqia) have been working on this project solo since mid to late 2024, taking 
 early 2026 due to burnout. Please understand that I can only do so much, especially since I refuse to vibecode yet
 another mod loader -- as many of you have probably seen recently with the uprising in slop mods across all games.
 
+### Support
+
+If you need any help whatsoever with Leaf, you can discuss anything leaf-related on Discord through the
+official [Project Zomboid Modding Community](https://discord.gg/2Vr6Wyh6Am) Discord using the appropriate channels.
+I am always active there, and you may ping me whenever you like for whatever reason, so long as you are reasonable.
+
 ## Policies
 
 You may find all the policies regarding the LeafPZ organisation and it's encompassing repositories below.
 
-### LLM and Generative AI policy
+### LLM and Generative AI
 
-**This project has a NO LLM policy under ANY circumstances.**
+**This project has a strict NO LLM policy under ANY circumstances.**
 LLMs and Generative AI are **NOT** welcome here, both for contributions and for issue reporting. Any such cases will be
 marked as slop issues/PRs, and given enough infractions you will have the ability to do so removed at the discretion of
 myself (aoqia). The choice of this is to preserve modding as a hobby and passion. LLMs have proven countless times to
@@ -79,10 +85,80 @@ the assumption that AI use is allowed.
 I (aoqia) will allow any discussion about this policy to be talked about in a reasonable manner. If you cannot be, you
 will probably be ignored.
 
-### Support
+### Repository name conventions
 
-If you need any help whatsoever with Leaf, you can discuss anything leaf-related on Discord through the
-official [Project Zomboid Modding Community](https://discord.gg/2Vr6Wyh6Am) Discord using the appropriate channels.
+Repository names under the LeafPZ organisation generally should follow the kebab-case format, containing no capital
+letters, spaces, underscores, etc. ASCII-only names are required. Try to keep numbers out of repository names (such as
+"v2" or "2026" etc. The repository names must start with `leaf-` if directly related to the Leaf project, and if not
+you should use your own discretion as to the naming convention; make it clear as to what the project relates to.
+
+### Commit name conventions
+
+All commits to Leaf must follow the [conventional commits][ConventionalCommits] standard as close as possible, however
+it does not need to be followed exactly - only close enough that it is clear and organised.
+
+### Issue and Pull Request conventions
+
+Generally, issues and pull requests to LeafPZ repositories should read as a short sentence without ending punctuation
+describing what the issue or pull request is about (with brevity in mind). These aren't to be followed exactly, as I
+myself (aoqia) am not too pedantic in this regard, but I'd highly recommend it. Generally, issue titles should describe
+what the issue *is*, and issue descriptions should describe *how* the issue is replicated and any other details. Pull
+request titles should describe what the pull request indends to achieve/do, and pull request descriptions should
+describe *how* it should be implemented, what areas of the repository it touches (if necessary), etc.
+
+If a repository contains specific issue and or pull request templates, be sure to follow those as well.
+
+Some **good** issue/PR titles might look like:
+
+- `Missing detailed exception message when game can't be found`
+- `Improper handling when no game arguments are provided`
+- `Latest stable release breaks bytecode patches`
+- `Disable game hash checks by default` 
+
+Some **bad** issue/PR titles might look like:
+
+- `bug: missing exception message` - Using conventional commits as issue/PR titles is not clean here, and the title
+  itself is vague enough at a glance.
+- `IMPROPER HANDLING WHEN NO GAME ARGUMENTS ARE PROVIDED` - Using all uppercase makes it hard to read at a glance
+- `Latest stable releases breaks EntrypointPatch bytecode patches which results in the loader crashing upon startup
+  in development and production environments` - Really verbose/long issue titles should be avoided, add more details
+  in the issue details itself.
+
+### Branch name conventions
+
+The default branch should always be `main` for any given repository. The main branch should always be treated as a
+rolling branch which may contain the latest changes ready for release - you may think of this branch as the staging
+area for features and fixes ready to be published in the next release. Generally I (aoqia) may include things here
+that don't directly fit under that category, but if you are a contributor external to the LeafPZ organisation, keep
+this in mind as it is important.
+
+Non-default branch names should be named according to contributor discretion, but it is highly recommended to follow
+a [Conventional Commits][ConventionalCommits]-like approach. Branch names should also follow kebab-case, similar
+to repository names.
+
+For example, some **good** branch names:
+
+- `main` (default) - The default branch should always be main!
+- `dev` (staging) - There may be a situation where an intermediate staging area is required, thus something like
+  dev, develop, staging, etc should be used. Most commonly, you will see `dev` however
+- `feat/new-feature` - An example of a branch containing a new feature
+- `feat/api-v2` - In this case, it's ok to include stuff like "v2", "v3", etc to briefly indicate an improvement,
+  however this should be used sparingly
+- `fix/big-bad-bug` - An example of a branch containing a bug fix
+- `refactor/api-cleanup` - A branch that contains a refactor such as a cleanup
+
+Generally, these three should be enough for most situations, but there is no harm in specifying at a deeper level if
+you feel it is required to do so.
+
+Some **bad** branch names:
+
+- `jane-fix-bad-bug` - Including author names in branches is not good
+- `FixBigBadBug` - Not following kebab-case style
+- `lmao67` - Doesn't detail anything relating to the branch or what it is meant to be
+
+Branch names such as `master`, `slave`, etc or branch names that contain information not relevant to the
+feature/fix/other should be avoided for obvious reasons, though this is primarily for branches in the repository
+itself and not necessarily for branches on third-party forks such as PR branch sources.
 
 ### Special Thanks
 
@@ -104,5 +180,4 @@ and everyone else who's contributed to Leaf in other ways!
 [LeafLoaderProxyNative]: https://github.com/LeafPZ/leaf-loader-proxy-native
 [LeafApi]: https://github.com/LeafPZ/leaf-api
 [LeafInstaller]: https://github.com/LeafPZ/leaf-installer
-
-
+[ConventionalCommits]: https://www.conventionalcommits.org
