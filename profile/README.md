@@ -10,6 +10,7 @@
 
 ![Maven status](https://img.shields.io/website?url=https%3A%2F%2Fmaven.aoqia.dev%2F&label=Maven)
 ![LGBTQ badge](https://pride-badges.pony.workers.dev/static/v1?label=LGBTQ%2B+Ally&labelColor=%23555&stripeWidth=6&stripeColors=ED8E89%2CF7B685%2CF3EBA5%2C94C691%2C9BD6D9%2CB4A8E0)
+![Binaware](https://pride-badges.pony.workers.dev/static/v1?label=binaware&labelColor=%23555&stripeWidth=6&stripeColors=D52D00%2CEF7627%2CFF9A56%2CFFFFFF%2CD162A4%2CB55690%2CA30262)
 
 </div>
 
