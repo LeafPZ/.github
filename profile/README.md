@@ -26,6 +26,23 @@ seen and used with Minecraft!
 > given mod, ask around for advice from people with experience. A good place to ask is in the official or unofficial
 > Project Zomboid Discord servers.
 
+## Index
+
+This section details the toolchain repositories and gives a quick summary of what it does, starting from least to most
+user-facing. Other repositories exist which are not detailed here, of which are not important enough to list here.
+
+- **[leaf][Leaf]** - Storage site for JSON files containing important game data like version information and file hashes
+- ~~**[leaf-filament][LeafFilament]**~~ - **(NOT CURRENTLY USED)** A helper Gradle plugin that yarn uses internally
+- ~~**[leaf-yarn][LeafYarn]**~~ - **(NOT CURRENTLY USED)** Open mappings for the game's Java code
+- **[leaf-loom][LeafLoom]** - Gradle plugin used to greatly improve the setup and environment of Leaf mod development
+- **[leaf-example-mod][LeafExampleMod]** - Example mod template to help you create your first Leaf mod
+- **[leaf-loader][LeafLoader]** - The mod loader that powers Leaf for both development and production
+- **[leaf-loader-proxy][LeafLoaderProxy]** - Proxy loader Java agent which sits in-between the game launcher and Java
+- **[leaf-loader-proxy-native][LeafLoaderProxyNative]** - Native agent required on Windows platforms (only) to fix a bug<br>
+  <sub><sup>Seriously, that is its only function due to a bug in the official game launcher!</sup></sub>
+- **[leaf-api][LeafApi]** - Common API provided officially by Leaf to cover common Java use-cases
+- **[leaf-installer][LeafInstaller]** - Platform-independent installer that guides installation of Leaf in production
+
 ## Background
 
 The goal was to port this toolchain to Project Zomboid while keeping the familiar Fabric style which helps
@@ -63,3 +80,16 @@ official [Project Zomboid Modding Community](https://discord.gg/2Vr6Wyh6Am) Disc
 - [SimKDT](https://github.com/SimKDT)
 
 and everyone else who's contributed to Leaf in other ways!
+
+[Leaf]: https://github.com/LeafPZ/leaf
+[LeafFilament]: https://github.com/LeafPZ/leaf-filament
+[LeafYarn]: https://github.com/LeafPZ/leaf-yarn
+[LeafLoom]: https://github.com/LeafPZ/leaf-loom
+[LeafExampleMod]: https://github.com/LeafPZ/leaf-example-mod
+[LeafLoader]: https://github.com/LeafPZ/leaf-loader
+[LeafLoaderProxy]: https://github.com/LeafPZ/leaf-loader-proxy
+[LeafLoaderProxyNative]: https://github.com/LeafPZ/leaf-loader-proxy-native
+[LeafApi]: https://github.com/LeafPZ/leaf-api
+[LeafInstaller]: https://github.com/LeafPZ/leaf-installer
+
+
