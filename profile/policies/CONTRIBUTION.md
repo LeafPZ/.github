@@ -29,17 +29,18 @@ If a repository contains specific issue and or pull request templates, be sure t
 
 Some **good** issue/PR titles might look like:
 
-- `Missing detailed exception message when game can't be found`
-- `Improper handling when no game arguments are provided`
-- `Latest stable release breaks bytecode patches`
-- `Disable game hash checks by default` 
+- `bug: missing detailed exception message when game can't be found`
+- `fix: resolve improper handling when no game arguments are provided`
+- `bug: latest stable release breaks bytecode patches`
+- `fix: disable game hash checks by default`
+- `feat: load mods from custom folder`
 
 Some **bad** issue/PR titles might look like:
 
-- `bug: missing exception message` - Using conventional commits as issue/PR titles is not clean here, and the title
-  itself is vague enough at a glance.
-- `IMPROPER HANDLING WHEN NO GAME ARGUMENTS ARE PROVIDED` - Using all uppercase makes it hard to read at a glance
-- `Latest stable releases breaks EntrypointPatch bytecode patches which results in the loader crashing upon startup
+- `missing exception message` - Using conventional commits as issue/PR titles is required, and the title
+  itself is vague at a glance.
+- `BUG: IMPROPER HANDLING WHEN NO GAME ARGUMENTS ARE PROVIDED` - Using all uppercase makes it hard to read at a glance
+- `bug: latest stable releases breaks EntrypointPatch bytecode patches which results in the loader crashing upon startup
   in development and production environments` - Really verbose/long issue titles should be avoided, add more details
   in the issue details itself.
 
