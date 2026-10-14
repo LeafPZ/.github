@@ -55,7 +55,7 @@ I (aoqia) have been working on this project solo since mid to late 2024, taking 
 early 2026 due to burnout. Please understand that I can only do so much, especially since I refuse to vibecode yet
 another mod loader -- as many of you have probably seen recently with the uprising in slop mods across all games.
 
-### Support
+## Support
 
 If you need any help whatsoever with Leaf, you can discuss anything leaf-related on Discord through the
 official [Project Zomboid Modding Community](https://discord.gg/2Vr6Wyh6Am) Discord using the appropriate channels.
@@ -68,7 +68,7 @@ You may find all the policies regarding the LeafPZ organisation and it's encompa
 - [LLM and Generative AI](policies/AI.md)
 - [Contribution](policies/CONTRIBUTION.md)
 
-### Special Thanks
+## Special Thanks
 
 - The entire [FabricMC team](https://github.com/FabricMC/)!
 - [albion](https://github.com/demiurgeQuantified)
