@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/LeafPZ/.github/security/policy
+    about: 'Please don''t file security issues publicly'
+  - name: Community Discord (PZMC)
+    url: https://discord.gg/TDqgR29NGe
+    about: Real-time help from other PZ modders. Also chat about the leaf toolchain.
