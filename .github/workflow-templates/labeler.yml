@@ -1,0 +1,9 @@
+on:
+  issues:
+    types: [opened, edited]
+  pull_request_target:
+    types: [opened, reopened, synchronize, ready_for_review]
+jobs:
+  labeler:
+    uses: LeafPZ/.github/.github/workflows/labeler.yml
+    secrets: inherit
