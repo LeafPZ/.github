@@ -1,0 +1,14 @@
+name: Triage
+on:
+  issues:
+    types: [opened, reopened]
+  pull_request_target:
+    types: [opened, reopened]
+permissions: {}
+jobs:
+  triage:
+    name: Triage
+    permissions:
+      contents: read
+      pull-requests: write
+    uses: LeafPZ/.github/.github/workflows/triage.yml@828e9642694b0a9f69324cfd3f36471ac6783c33
