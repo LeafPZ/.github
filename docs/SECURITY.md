@@ -20,7 +20,9 @@ Please include as much of the following as you can:
 
 ## AI disclosure
 
-If you created
+If you created, generated, edited, translated, or otherwise used AI to create your security report in any way, you must disclose the
+methods you used the AI for in detail as well as the parts that were human-reviewed. If your security report wasn't reviewed by a
+human, it will be closed.
 
 ## Scope
 
