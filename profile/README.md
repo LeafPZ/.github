@@ -63,17 +63,19 @@ I am always active there, and you may ping me whenever you like for whatever rea
 
 ## Policies
 
-You may find all the policies regarding the LeafPZ organisation and it's encompassing repositories below.
+You may find all the policies regarding the LeafPZ organisation and it's encompassing repositories in the org's
+[.github](../docs/) repository. Particular ones to note are:
 
-- [LLM and Generative AI](policies/AI.md)
-- [Contribution](policies/CONTRIBUTION.md)
+- [Contributing](../docs/CONTRIBUTING.md)
+- [Code of Conduct](../docs/CODE_OF_CONDUCT.md)
+- [Security](../docs/SECURITY.md)
 
 ## Special Thanks
 
 - The entire [FabricMC team](https://github.com/FabricMC/)!
 - [albion](https://github.com/demiurgeQuantified)
 - GigaWatte
-- electrisoma
+- [electrisoma](https://github.com/electrisoma)
 - [SimKDT](https://github.com/SimKDT)
 
 and everyone else who's contributed to Leaf in other ways!
